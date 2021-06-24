@@ -1,0 +1,109 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ li{
+    background-color: white;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    list-style: none;
+}
+
+body{
+    background-color: lightblue;
+}
+#root{
+    display: flex;
+    justify-content: center;
+}
+
+.todo-header{
+    margin-top: 1rem;
+    color: #0097A7;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+input{
+    display: block;
+}
+label{
+    font-size: 16px;
+}
+
+.todo-form{
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.form-header{
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.todo-form label{
+    width: 100%;
+}
+.todo-form #body{
+    height: 10vh;
+}
+.todo-form input{
+    width: 100%;
+    
+    border: 1px solid #00BCD4;
+    background-color: #ffffff;
+    padding: 10px 0;
+    margin: 10px 0;
+    font-size: .75rem;
+    font-weight: 300;
+    border-radius: 5px;
+}
+
+.todo-list-item{
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #00BCD4;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.todo-list-item:hover{
+    cursor: pointer;
+}
+button{
+    margin: 0.5rem;
+}
+
+.float-right{
+    margin-left: 9rem;
+}
+button{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #00BCD4;
+    height: 2rem;
+    color: white;
+    font-weight: bold;
+    line-height: 0.5rem;
+}
+
+.long-button{
+    width: 100%;
+    margin: 10px 0;
+}
